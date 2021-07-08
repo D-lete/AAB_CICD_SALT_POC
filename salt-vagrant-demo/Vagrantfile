@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     master_config.vm.provider "virtualbox" do |vb|
         vb.memory = "2048"
         vb.cpus = 1
-        vb.name = "master"
+        vb.name = "master" #slave
     end
     
     master_config.vm.box = "#{os_1}"
